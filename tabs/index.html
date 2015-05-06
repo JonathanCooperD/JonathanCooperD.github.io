@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>Tabs</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body ng-controller="LoginSignUpCtrl">
+
+  <ul>
+    <li class="pure-button"
+        ng-class="{'pure-button-active': activeTab === 'signup'}"
+        ng-click="switchTabTo('signup')">
+        Sign Up
+    </li>
+    <li class="pure-button"
+        ng-class="{'pure-button-active': activeTab === 'login'}"
+        ng-click="switchTabTo('login')">
+        Log in
+    </li>
+  </ul>
+
+  <div class="tab-content">
+      <div ng-include="tabTemplates[activeTab]"></div>
+  </div>
+
+  <script src="js/angular.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+</body>
