@@ -1,3 +1,0 @@
-portfolio
-=========
-# CoopAtCanvas.github.io
