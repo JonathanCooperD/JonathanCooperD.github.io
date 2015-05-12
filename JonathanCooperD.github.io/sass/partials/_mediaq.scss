@@ -1,0 +1,264 @@
+/* ========================================================================
+    Small Screen and iPad
+   ======================================================================== */
+
+
+@media all and (max-width: 1000px) {
+  
+h1 { font-size: 54px; line-height: 1; }
+
+.center{
+  max-width:640px;
+}
+
+/* ---------------------------------
+   Home
+   --------------------------------- */
+
+.home-intro{
+    height: 450px;
+}
+
+.home-intro__subtitle{
+  margin-top: 20px;
+}
+
+
+.work{
+  max-width: 320px;
+  margin: auto;
+  width: 50%;
+}
+
+.brand{
+  width: 25%;
+}
+
+/* ---------------------------------
+   Work
+   --------------------------------- */
+
+.folio-intro{
+    height: 600px;
+    padding: 0 40px;
+}
+
+.intro__title{
+  padding-top: 240px;
+}
+
+.cutty-main-img {
+  bottom: -210px;
+  right: -350px;
+}
+
+.nin-main-img {
+  bottom: -200px;
+}
+
+.liveb-main-img {
+  bottom: -200px;
+  right: -350px;
+}
+
+.tech{
+  padding: 60px 40px;
+
+  .center{   
+    margin: 0 auto;
+  }
+
+  .tech-img{
+    padding: 0 20px 0;
+    float: right;
+    width: 100%;
+    @include box-sizing(border-box);
+  }
+  .tech-copy{
+    padding: 20px 0 0;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.bg-blu .tech-img{
+  margin-top: -60px;
+}
+
+}
+
+/* ========================================================================
+    iPad Vertical
+   ======================================================================== */
+
+@media all and (max-width: 768px) {
+  
+  .work figcaption{
+    min-height: 83px;
+  }
+
+}
+
+/* ========================================================================
+    Small Screen and iPad
+   ======================================================================== */
+
+@media all and (max-width: 520px) {
+
+h2 { font-size: 36px; }
+
+.btn.blue,
+.intro-btn {
+  text-align: center;
+  width: 100%;
+  @include box-sizing(border-box);
+}
+
+.intro-btn{
+  margin-top: 10px;
+}
+
+.social{
+  float: none;
+}
+
+/* ---------------------------------
+   Home
+   --------------------------------- */
+
+.home-intro{
+  height: 360px;
+
+  h1{
+    font-size: 40px;
+  }
+}
+
+.home-intro__title{
+  padding-top: 95px;
+}
+
+.work{
+  display: block;
+  float: none;
+  max-width: 320px;
+  margin: auto;
+  width: 100%;
+
+  .work__featured{ 
+    margin: 20px 0;
+
+    img{
+      width: 100%;
+    }
+  }
+}
+
+.brand{
+  width: 50%;
+}
+
+.center-sm p{
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.header{
+    @extend .wrapper;
+    background: #FFF;
+    height: auto;
+    position: relative;
+
+    .center{
+        max-width: 920px;
+        padding: 0 20px;
+    }
+
+    ul{
+        line-height: 56px;
+        text-align: center;
+        padding: 20px 0 0;
+
+        li{
+          border-top: 1px solid #CCC;
+          display: block;
+          width: 100%;
+        }
+
+        a{
+          font-family: 'NovecentowideLightBold';
+          height: auto;
+          margin: 0;
+        }
+    }
+}
+
+.logo{
+    float: none;
+    display: block;
+    margin: 16px auto 0;
+    text-align: center;
+    width: 100%;
+}
+
+/* ---------------------------------
+   Work
+   --------------------------------- */
+
+.folio-intro{
+  height: auto;
+  padding-bottom: 100px;
+}
+
+.intro__title{
+  padding-top: 70px;
+}
+
+.tech{
+  padding: 40px 40px 70px;
+
+  .tech-img{
+    display: none;
+  }
+
+  .tech-copy{
+    padding: 20px 0 0;
+    float: none;
+    width: 100%;
+
+    h3{
+      font-size: 19px;
+    }
+  }
+}
+
+.cutty-mobile, 
+.liveb-mobile {
+  padding: 60px 20px;
+}
+
+.phone-wrap{
+    width: 100%;
+}
+
+.cutty-mobile img,
+.liveb-mobile img{
+  height: auto;
+  max-width: 100%;
+}
+
+.cutty-main-img,
+.nin-main-img,
+.liveb-main-img{
+  display: none;
+}
+
+.arrow-back-fx{
+  padding: 0;
+}
+
+.arrow-back-fx:before{
+  display: none;
+}
+
+}
