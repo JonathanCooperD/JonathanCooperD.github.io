@@ -1,0 +1,765 @@
+/* ==========================================================================
+   Nomalize / Resets
+   ========================================================================== */
+
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block}
+[hidden]{display:none}
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+html,button,input,select,textarea{font-family:sans-serif}
+body{margin:0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:bold}
+blockquote{margin:1em 40px}
+dfn{font-style:italic}
+mark{background:#ff0;color:#000}
+p,pre{margin:1em 0}
+code,kbd,pre,samp{font-family:monospace,serif;_font-family:'courier new',monospace;font-size:1em}
+pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}
+q{quotes:none}
+q:before,q:after{content:'';content:none}
+small{font-size:80%}
+a:focus { outline:thin dotted }
+a:active, a:hover { outline:0 }
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-0.5em}
+sub{bottom:-0.25em}
+dl,menu,ol,ul{margin:1em 0}
+dd{margin:0 0 0 40px}
+menu,ol,ul{padding:0 0 0 40px}
+img{border:0;-ms-interpolation-mode:bicubic;vertical-align:middle;background: transparent !important; -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)" !important; /* IE8 */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF) !important;   /* IE6 & 7 */ }
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+form{margin:0}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0;white-space:normal;*margin-left:-7px}
+button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle}
+button,input{line-height:normal}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;*overflow:visible}
+button[disabled],input[disabled]{cursor:default}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;*height:13px;*width:13px}
+input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top;resize:vertical;}
+table{border-collapse:collapse;border-spacing:0}
+a,a:focus,a:active{outline:none !important;}
+html, button, input, select, textarea{color: #222;}
+body{font-size: 1em; line-height: 1.4;}
+::-moz-selection {background: #b3d4fc; text-shadow: none;}
+::selection{background: #b3d4fc;text-shadow:none;}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0;}
+.chromeframe{margin: 0;background:#ccc;color:#000;padding:80px 0px 80px 0px;z-index:99999 !important;position:absolute;top:0px;left:0px;width:100%;text-align:center;}
+.chromeframe a{color:blue !important;}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+body, html{
+	height: 100%;
+	min-width: 990px !important;
+}
+
+body { 
+  color: #444;
+  font: 13px/1.5 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Verdana, Tahoma, sans-serif;
+  font-smoothing: antialiased; -webkit-font-smoothing: antialiased; 
+  font-smooth: always;
+}
+
+header, section, footer{
+  	margin: auto;
+	position: relative;
+  	width: 100%;
+}
+
+h1, h2, h3 {
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	text-rendering: optimizelegibility;
+}
+
+h1, h2{
+	margin-top: 0;
+}
+
+h1 { font-size: 60px; }
+h2 { font-size: 46px; }
+h3 { font-size: 24px; margin: 20px 0 0 0; }
+h4 { font-size: 13px; margin: 20px 0 15px 0; }
+
+p > a { color: #ed1c24; text-decoration: underline; text-transform: none; }
+p > a:hover { color: #444; }
+
+a       { color: #000; text-decoration: none; }
+a:hover { color: inherit; }
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+/* -------------------------------------
+   Containers
+   ------------------------------------- */
+
+.row{
+	position: relative;
+	width: 100%;
+}
+
+#hero, #offer, #choose-game, #how, #footer{
+	margin: auto;
+	position: relative;
+	width: 990px;
+}
+
+#hero{
+	border-bottom: 1px solid #FFF;
+	height: 496px;
+}
+
+.header-fix{
+	margin-top: 44px;
+}
+
+#offer{
+	padding-top: 130px;
+}
+
+#choose-game{
+	background: url('../img/bg-select-glow.png') repeat-x center 40px;
+	min-height: 428px;
+	padding-top: 67px;
+}
+
+#how{
+	padding: 60px 0 45px 0;
+}
+
+#footer{
+	padding: 30px 0;
+}
+
+/* -------------------------------------
+   Re-useable Backgrounds
+   ------------------------------------- */
+
+.bg-yellow   { background: url('../img/bg-yellow-gradient.png') repeat-x 0 0; }
+.bg-gray     { background: url('../img/bg-gray.jpg') repeat-x 0 0; }
+.bg-gray-btm { background: url('../img/bg-gray-bottom.png') repeat-x bottom left; border-bottom: 1px solid #FFF; }
+.bg-blk      { background: #434141 url('../img/bg-black-gradient.png') repeat-x 0 0; }
+
+/* -------------------------------------
+   Re-useable Elements
+   ------------------------------------- */
+
+.window{
+	border: 3px solid #D5D5D5;
+	border-radius: 5px;
+	background: #FFF url('../img/bg-wondow.jpg') repeat-x 0 240px;
+	float: left;
+	margin-bottom: 60px;
+	min-height: 340px;
+	padding: 48px 35px 35px 35px;
+	position: relative;
+	text-align: center;
+}
+
+.button{
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.disclaimer{
+	font-size: 11px;
+	float: left;
+	margin: 30px 0 0;
+	width: 100%;
+}
+
+/* ==========================================================================
+   Modules
+   ========================================================================== */
+
+/* -------------------------------------
+   Main Navigation Fixes
+   ------------------------------------- */
+
+#global-nav{
+	z-index: 99999 !important;
+}
+
+#globalNavSpacer{
+	display: none !important;
+}
+
+#global-nav #globalNavigation{
+	position: fixed !important;
+	top: 0px !important;
+	left: 0px !important;
+	width: 100% !important;
+	z-index: 9999 !important;
+	box-shadow: none !important;
+	max-height: 43px !important;
+}
+
+#global-nav #lang-style{
+	z-index: 99999 !important;
+}
+
+/* -------------------------------------
+   Offer Banner	
+   ------------------------------------- */
+
+.offer-banner{
+	background: url('../img/exclusive-offer-banner.png') no-repeat 0 0;
+	font: normal 12px/14px Avenir, Helvetica, Arial, sans-serif;
+	display: block;
+	height: 57px;
+	padding: 71px 0 0 0;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	text-transform: uppercase;
+	top: 0;
+	width: 90px;
+	z-index: 999;
+}
+
+.offer-banner:hover{
+	background: url('../img/exclusive-offer-banner.png') no-repeat -90px 0;
+	color: #666;
+}
+
+.offer-banner:active,
+.offer-banner:focus{
+	background: url('../img/exclusive-offer-banner.png') no-repeat -180px 0;
+}
+
+/* -------------------------------------
+   Hero Copy
+   ------------------------------------- */
+
+.hero-copy{
+	float: left;
+	padding: 94px 0 0 18px;
+	position: relative;
+	text-shadow: 0 1px 0 #FFFA79;
+	width: 470px;
+	z-index: 988;
+}
+
+.hero-copy h1{
+	margin: 0;
+}
+
+.hero-copy p{
+	font: normal 23px/32px 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Verdana, Tahoma, sans-serif;
+	font-size: 23px;
+	line-height: 32px;
+	margin: 4px 0 46px 0;
+}
+
+.more{
+	background: #E8181F; /* Old browsers */
+	background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VkNGI1MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ5JSIgc3RvcC1jb2xvcj0iI2VkNGI1MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2U4MTgxZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlODE4MWYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+');
+	background: -moz-linear-gradient(top,  #ed4b50 0%, #ed4b50 49%, #e8181f 51%, #e8181f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ed4b50), color-stop(49%,#ed4b50), color-stop(51%,#e8181f), color-stop(100%,#e8181f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ed4b50 0%,#ed4b50 49%,#e8181f 51%,#e8181f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ed4b50 0%,#ed4b50 49%,#e8181f 51%,#e8181f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ed4b50 0%,#ed4b50 49%,#e8181f 51%,#e8181f 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ed4b50 0%,#ed4b50 49%,#e8181f 51%,#e8181f 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed4b50', endColorstr='#e8181f',GradientType=0 ); /* IE6-8 */
+	border: 4px solid #E8181F;
+	border-radius: 8px;
+	-o-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	color: #FFF;
+	font:  normal 18px/37px Avenir, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Verdana, Tahoma, sans-serif;
+	float: left;
+	height: 36px;
+	text-shadow: 0 -1px 0 #cf141b;
+	width: 160px;
+}
+
+.more:hover{
+	background: #eb3a40; /* Old browsers */
+	background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ViM2E0MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ5JSIgc3RvcC1jb2xvcj0iI2ViM2E0MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2U4MTgxZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlODE4MWYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+');
+	background: -moz-linear-gradient(top,  #eb3a40 0%, #eb3a40 49%, #e8181f 51%, #e8181f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eb3a40), color-stop(49%,#eb3a40), color-stop(51%,#e8181f), color-stop(100%,#e8181f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #eb3a40 0%,#eb3a40 49%,#e8181f 51%,#e8181f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #eb3a40 0%,#eb3a40 49%,#e8181f 51%,#e8181f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #eb3a40 0%,#eb3a40 49%,#e8181f 51%,#e8181f 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #eb3a40 0%,#eb3a40 49%,#e8181f 51%,#e8181f 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb3a40', endColorstr='#e8181f',GradientType=0 ); /* IE6-8 */
+	color: #FFF;
+}
+
+.more:active,
+.more:focus{
+	border: 4px solid #be1015;
+	box-shadow: inset 0 0 10px #93070c;
+	-o-box-shadow: inset 0 0 10px #93070c;
+	-moz-box-shadow: inset 0 0 10px #93070c;
+	-webkit-box-shadow: inset 0 0 10px #93070c;
+	text-shadow: 0 1px 0 #cf141b;
+}
+
+.share{
+	float: left;
+	margin: 10px 0 0 20px;
+}
+
+.addthis_button_facebook_like{
+	max-width: 50px !important;
+	overflow: hidden !important;
+}
+
+/* -------------------------------------
+   Hero 
+   ------------------------------------- */
+
+.ds, .sparkles, .mario, .badge, .red-badge{
+	position: absolute;
+}
+
+.ds, .sparkles{
+	right: -70px;
+	top: 80px;
+}
+
+.mario{
+	right: 100px;
+	top: 36px;
+}
+
+.badge{
+	background: url('../img/bg-badge.png') no-repeat 0 0;
+	color: #FFF;
+	display: none;
+	font-family: Avenir, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Verdana, Tahoma, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 18px;
+	margin: 0;
+	text-align: center;
+	text-shadow: 0 -1px 0 #055193;
+}
+
+.badge.flash { background: url('../img/bg-badge-light.png') no-repeat 0 0; }
+
+.badge.graphics { height: 90px; padding: 55px 0px 20px 0;     right: 350px; top: 290px; width: 144px; }
+.badge.games    { height: 89px; padding: 36px 15px 20px 15px; right: -24px; top: 292px; width: 114px; }
+.badge.screens  { height: 92px; padding: 32px 32px 20px 32px; right: 0;     top: 146px; width: 80px; }
+.badge.value    { height: 84px; padding: 42px 28px 20px 28px; right: -22px; top: 131px; width: 77px; }
+
+.badge.graphics-flash { height: 90px; padding: 55px 0px 20px 0;     right: 350px; top: 290px; width: 144px; }
+.badge.games-flash    { height: 89px; padding: 36px 15px 20px 15px; right: -24px; top: 292px; width: 114px; }
+.badge.screens-flash  { height: 92px; padding: 32px 32px 20px 32px; right: 0;     top: 146px; width: 80px; }
+.badge.value-flash    { height: 84px; padding: 42px 28px 20px 28px; right: -22px; top: 131px; width: 77px; }
+
+.ds       { z-index: 700; }
+.sparkles { z-index: 710; }
+.badge    { z-index: 730; }
+.flash    { z-index: 731; }
+.mario    { z-index: 720; }
+
+.mario{
+	background-image: url('../img/mario.png'); 
+	background-repeat: no-repeat; 
+	background-position: 0 490px; 
+	height: 496px;
+	width: 280px;
+}
+
+.sparkles{
+	display: none;
+}
+
+/* -------------------------------------
+   Offers - Get a free game
+   ------------------------------------- */
+
+.window.system{
+	width: 275px;
+}
+
+.window.system img{
+	display: block;
+	margin: auto;
+}
+
+.window.system p{
+	font-size: 11px;
+	margin: 0 auto;
+	line-height: 1.8;
+	max-width: 255px;
+}
+
+.plus{
+	float: left;
+	margin: 147px 9px 0;
+}
+
+.window.games{
+	float: right;
+	width: 508px;
+}
+
+.two-col{
+	float: left;
+	width: 240px;
+}
+
+.two-col.last{
+	float: right;
+}
+
+.luigi-bg,
+.pokemon-bg{ 
+	background: url('../img/pokemon-mystery-dungeon.png') no-repeat 0 0;
+	display: block;
+	height: 220px;
+	position: relative;
+	width: 240px;
+}
+
+.pokemon-bg { background: url('../img/pokemon-mystery-dungeon.png') no-repeat 0 0; }
+.luigi-bg   { background: url('../img/luigis-mansion-dark-moon.png') no-repeat 0 0; }
+
+.more-link{
+	background: rgba(0, 0, 0, 0.8);
+	border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px;
+	bottom: 3px;
+	color: #FFC71D;
+	display: none;
+	font-weight: normal;
+	height: 50px;
+	left: 3px;
+	line-height: 50px;
+	position: absolute;
+	width: 236px;
+} 
+
+.luigi-bg:hover .more-link,
+.pokemon-bg:hover .more-link{
+	display: block;
+}
+
+.opacity .more-link{
+	display: block;
+	opacity: 0;
+	transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+}
+
+.opacity .luigi-bg:hover .more-link,
+.opacity .pokemon-bg:hover .more-link{
+	display: block;
+	opacity: 1;
+} 
+
+.yellow-arrow{
+	background: url('../img/yellow-arrow-nib.png') no-repeat 0 0;
+	display: inline-block;
+	height: 9px;
+	width: 10px;
+}
+
+.or{
+	background: #E8181F;
+	border-radius: 25px; -o-border-radius: 25px; -moz-border-radius: 25px; -webkit-border-radius: 25px;
+	color: #FFF;
+	font: bold 46px/46px Avenir, Helvetica, Arial, sans-serif;
+	height: 50px;
+	left: 246px;
+	margin: 0;
+	position: absolute;
+	top: 135px;
+	width: 84px;
+	z-index: 9991;
+}
+
+/* -------------------------------------
+   Choose Game
+   ------------------------------------- */
+
+.choose-title{
+	font-size: 38px;
+	margin-bottom: 60px;
+	position: relative;
+	text-shadow: 0 1px 0 #FFFA79;
+	z-index: 998;
+}
+
+.stagger{
+	cursor: pointer;
+	display: block;
+	float: left;
+	margin-left: -30px;
+	position: relative;
+}
+
+#choose-game .sparkles{
+	right: -48px;
+	top: 122px;
+	z-index: 600;
+}
+
+.stagger.one   { z-index: 700; margin-top: 45px;   margin-left: 50px;   }
+.stagger.two   { z-index: 702; margin-top: 30px; }
+.stagger.three { z-index: 710; margin-left: -45px; margin-right: -15px; }
+.stagger.four  { z-index: 705; margin-top: 30px; }
+.stagger.five  { z-index: 703; margin-top: 45px; }
+
+.red-badge{
+	background: url('../img/bg-badge-red.png') no-repeat 0 0;
+	color: #FFF;
+	display: block;
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	height: 84px; 
+	line-height: 18px;
+	margin: 0;
+	padding: 42px 28px 20px 28px; 
+	right: -22px; 
+	text-align: center;
+	text-shadow: 0 -1px 0 #d61302;
+	top: 131px; 
+	width: 77px;
+	z-index: 730;
+}
+
+/* -------------------------------------
+   How to Steps
+   ------------------------------------- */
+
+.how-title{
+	margin-bottom: 15px;
+}
+
+.step{
+	border: 3px solid #D5D5D5;
+	border-radius: 5px;
+	background: #FFF;
+	float: left;
+	height: 380px;
+	margin-bottom: 60px;
+	margin-right: 11px;
+	overflow: hidden;
+	padding: 48px 35px 35px 35px;
+	position: relative;
+	text-align: center;
+	transition: box-shadow 0.5s ease-in;
+	-webkit-transition: -webkit-box-shadow 0.5s ease-in; 
+}
+
+.step-bg{
+	background: url('../img/bg-wondow.jpg') repeat-x 0 180px;
+	display: none;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.step.last{
+	margin-right: 0;
+}
+
+.step-number{
+	border-radius: 5px;
+	color: #FFF;
+	font: bold 29px/36px Avenir, Helvetica, Arial, sans-serif;
+	height: 36px;
+	margin: -38px 0 0 -25px;
+	max-width: 36px;
+	text-align: center;
+	transition: background-color 0.5s ease-in;
+	-webkit-transition: background-color 0.5s ease-in; 
+}
+
+.step h3{
+	height: 36px;
+	display: block;
+	text-shadow: 0 1px 0 #FFF;
+}
+
+p.step-copy{
+	display: none;
+	min-width: 418px;
+	position: relative;
+	text-align: left;
+	z-index: 99;
+}
+
+.next, .prev { 
+	background-image: url('../img/prev-next-arrows.png');
+	background-repeat: no-repeat;
+	display: block;
+	height: 31px;
+	position: absolute;
+	top: 50%;
+	width: 20px;
+}
+
+.prev { background-position: -20px 0; left: -35px;  }
+.next { background-position: -60px 0; right: -35px; }
+
+/* -------------------------------------
+   Footer Content
+   ------------------------------------- */
+
+.footer-content{
+	margin: auto;
+	text-align: center;
+	width: 470px;
+}
+
+.footer-content p{
+	color: #D5D5D5;
+	margin: 20px 0 0;
+	text-shadow: 0 1px 0 #222;
+}
+
+.footer-content img{
+	margin: auto;
+}
+
+.mario-sm{
+	position: absolute;
+	top: -65px;
+	right: 0;
+}
+
+/* ==========================================================================
+   States
+   ========================================================================== */
+
+.is-initial-open p.step-copy,
+.is-initial-open h3 .is-inactive-title,
+.is-initial-open .step-bg{
+	display: block !important;
+}
+
+.is-initial-open img.is-active-icon{
+	display: inline !important;
+}
+
+.is-active-icon, .is-inactive-icon{
+	position: relative;
+	z-index: 9;
+}
+
+.is-active-icon,
+.is-inactive-title,
+.is-initial-open h3 .is-active-title,
+.is-initial-open img.is-inactive-icon{
+	display: none;
+}
+
+.is-inactive-title{
+	float: left;
+	text-align: left !important;
+	width: 418px;
+}
+
+.is-active-title{
+	text-align: center;
+}
+
+.is-initial-open h3, 
+.is-open h3{ 
+	color: #444 !important; 
+}
+
+.step:hover .is-active-title{ 
+	color: #ed1c24;
+	transition: color 0.3s ease-in;
+	-webkit-transition: color 0.3s ease-in; 
+}
+
+.step.is-closed{
+	background: #F1F1F1;
+	border-color: #FFF;
+	box-shadow: 0 0 6px #777; -o-box-shadow: 0 0 6px #777; -moz-box-shadow: 0 0 6px #777; -webkit-box-shadow: 0 0 6px #777;
+	cursor: pointer;
+	width: 161px;
+}
+
+.is-closed .step-number{
+	background: #E8181F;
+	text-align: center;
+}
+
+.step.is-open{
+	width: 418px;
+}
+
+.is-open .step-number{
+	background: #444;
+	text-align: center;
+}
+
+.is-visible{
+	display: block !important;
+}
+
+.is-inactive-arrow.prev { background-position: 0 0; }
+.is-inactive-arrow.next { background-position: -40px 0; }
+
+/* ==========================================================================
+   IE Fixes
+   ========================================================================== */
+
+.ie9 .gradient { filter: none; }
+
+.ie8 .sparkles,
+.ie8 .mario,
+.ie8 .badge{
+	display: block !important;
+}
+
+.ie8 .sparkles.sparkling,
+.ie8 .flash,
+.ie8 .badge.graphics-flash,
+.ie8 .badge.games-flash,
+.ie8 .badge.screens-flash,
+.ie8 .badge.value-flash{
+	display: none !important;
+}
+
+.ie8 .more-link{
+	background: #000 !important;
+}
+
+/* ==========================================================================
+   Debug colors for box model adjustments
+   ========================================================================== */
+
+.debug-red    { background-color: red;    }
+.debug-olive  { background-color: olive;  }
+.debug-yellow { background-color: yellow; }
+.debug-green  { background-color: green;  }
+.debug-blue   { background-color: blue;   }
+.debug-lime   { background-color: lime;   }
+.debug-gray   { background-color: gray;   }
+
+/* ==========================================================================
+   Non-Semantic Helper Classes
+   ========================================================================== */
+
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
+.ir br { display: none; }
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
