@@ -1,0 +1,98 @@
+{
+  "assetsByChunkName": {
+    "path---mtv-its-your-sex-life": [
+      "path---mtv-its-your-sex-life-a0e39f21c11f6a62c5ab.js",
+      "path---mtv-its-your-sex-life-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-d01fd93f42f93fe639fb.js",
+      "component---src-pages-index-js-d01fd93f42f93fe639fb.js.map"
+    ],
+    "component---src-pages-nintendo-bravely-default-js": [
+      "component---src-pages-nintendo-bravely-default-js-eddf78898b4d9f154f1b.js",
+      "component---src-pages-nintendo-bravely-default-js-eddf78898b4d9f154f1b.js.map"
+    ],
+    "component---src-pages-nintendo-mario-party-js": [
+      "component---src-pages-nintendo-mario-party-js-af67bebb40dd01555a6f.js",
+      "component---src-pages-nintendo-mario-party-js-af67bebb40dd01555a6f.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "component---src-pages-international-rescue-foundation-js": [
+      "component---src-pages-international-rescue-foundation-js-accb44328bc8f3d1ff1e.js",
+      "component---src-pages-international-rescue-foundation-js-accb44328bc8f3d1ff1e.js.map"
+    ],
+    "component---src-pages-expedition-travel-advisor-js": [
+      "component---src-pages-expedition-travel-advisor-js-14276806490a16841351.js",
+      "component---src-pages-expedition-travel-advisor-js-14276806490a16841351.js.map"
+    ],
+    "path---oss-development-dashboards": [
+      "path---oss-development-dashboards-a0e39f21c11f6a62c5ab.js",
+      "path---oss-development-dashboards-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---international-rescue-foundation": [
+      "path---international-rescue-foundation-a0e39f21c11f6a62c5ab.js",
+      "path---international-rescue-foundation-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-1c37b075f75436ca53eb.js",
+      "component---src-layouts-index-js-1c37b075f75436ca53eb.js.map"
+    ],
+    "path---index": [
+      "path---index-a0e39f21c11f6a62c5ab.js",
+      "path---index-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-404-js": [
+      "component---src-pages-404-js-cd51d374be13da4bdeeb.js",
+      "component---src-pages-404-js-cd51d374be13da4bdeeb.js.map"
+    ],
+    "commons": [
+      "commons-aa951eff477eb8d89058.js",
+      "commons-aa951eff477eb8d89058.js.map"
+    ],
+    "path---404-html": [
+      "path---404-html-a0e39f21c11f6a62c5ab.js",
+      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---expedition-travel-advisor": [
+      "path---expedition-travel-advisor-a0e39f21c11f6a62c5ab.js",
+      "path---expedition-travel-advisor-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-oss-development-dashboards-js": [
+      "component---src-pages-oss-development-dashboards-js-17a0246a5122f07621dd.js",
+      "component---src-pages-oss-development-dashboards-js-17a0246a5122f07621dd.js.map"
+    ],
+    "app": [
+      "app-436e0e309f039757fde8.js",
+      "build-js-styles.css",
+      "app-436e0e309f039757fde8.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---nintendo-bravely-default": [
+      "path---nintendo-bravely-default-a0e39f21c11f6a62c5ab.js",
+      "path---nintendo-bravely-default-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---nintendo-mario-party": [
+      "path---nintendo-mario-party-a0e39f21c11f6a62c5ab.js",
+      "path---nintendo-mario-party-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---404": [
+      "path---404-a0e39f21c11f6a62c5ab.js",
+      "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-about-js": [
+      "component---src-pages-about-js-bac8d760558734b66155.js",
+      "component---src-pages-about-js-bac8d760558734b66155.js.map"
+    ],
+    "component---src-pages-mtv-its-your-sex-life-js": [
+      "component---src-pages-mtv-its-your-sex-life-js-e0da22dcba293b29da15.js",
+      "component---src-pages-mtv-its-your-sex-life-js-e0da22dcba293b29da15.js.map"
+    ],
+    "path---about": [
+      "path---about-a0e39f21c11f6a62c5ab.js",
+      "path---about-a0e39f21c11f6a62c5ab.js.map"
+    ]
+  }
+}
